@@ -1,0 +1,20 @@
+￼!!!
+html
+￼- var primaryBackgroundColor = '~primaryBackgroundColor~';
+￼- var primaryTextColor = '~primaryTextColor~';
+￼- var title = '~title~';
+￼head
+title #{title}
+body
+div(style="background-color: #{generalBackgroundColor}; width: 100%; height: 100%; font-family:
+'#{fontFamily}';")
+div(style="background-color: #{primaryBackgroundColor};color: #{primaryTextColor};")
+table(style="background-color: #{primaryBackgroundColor};color: #{primaryTextColor};border-top:
+solid 5px #{secondaryBackgroundColor};")
+tbody
+tr
+#{ticket.ticketNum} #{ticket.status}
+td(style="width:100%;")
+td
+strong(style="padding: 10px 10px; margin: 0px;font-family: '#{fontFamily}';") Ticket
+img(src="#{logoName}", alt="Logo")
